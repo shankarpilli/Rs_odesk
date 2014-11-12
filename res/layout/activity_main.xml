@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        layout="@layout/odesk_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/ll_margin"
+        android:layout_weight="90"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="33.33"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/jobs_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/ll_margin"
+                android:layout_weight="1.0"
+                android:background="#0D8BBD"
+                android:padding="@dimen/ll_margin" >
+
+                <TextView
+                    android:id="@+id/tx_jobs"
+                    style="@style/DashboardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/job"
+                    android:text="@string/jobs" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/notifications_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/ll_margin"
+                android:layout_weight="1.0"
+                android:background="#E51400"
+                android:padding="@dimen/ll_margin" >
+
+                <TextView
+                    android:id="@+id/tx_notifications"
+                    style="@style/DashboardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/notification"
+                    android:text="@string/notifications" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="33.33"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/invitations_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/ll_margin"
+                android:layout_weight="1.0"
+                android:background="#339933"
+                android:padding="@dimen/ll_margin" >
+
+                <TextView
+                    android:id="@+id/tx_invitations"
+                    style="@style/DashboardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/invitation"
+                    android:text="@string/invitations" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/messages_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/ll_margin"
+                android:layout_weight="1.0"
+                android:background="#A15001"
+                android:padding="@dimen/ll_margin" >
+
+                <TextView
+                    android:id="@+id/tx_messages_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/messages_count"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tx_messages"
+                    style="@style/DashboardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/message"
+                    android:text="@string/messages" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="33.33"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/ll_margin"
+                android:layout_weight="1.0"
+                android:background="#F19609"
+                android:padding="@dimen/ll_margin" >
+
+                <TextView
+                    android:id="@+id/tx_profile"
+                    style="@style/DashboardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/profile"
+                    android:text="@string/profile" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/settings_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/ll_margin"
+                android:layout_weight="1.0"
+                android:background="#09706D"
+                android:padding="@dimen/ll_margin" >
+
+                <TextView
+                    android:id="@+id/tx_settings"
+                    style="@style/DashboardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/setting"
+                    android:text="@string/settings" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

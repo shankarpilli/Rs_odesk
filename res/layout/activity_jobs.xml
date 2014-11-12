@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        layout="@layout/odesk_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/jobs_search_margin"
+        android:layout_weight="10"
+        android:background="@drawable/ed_background"
+        android:gravity="center_vertical"
+        android:weightSum="100" >
+
+        <EditText
+            android:id="@+id/ed_searchedtext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/et_margin_left"
+            android:layout_weight="75"
+            android:paddingLeft="@dimen/ll_margin"
+            android:background="@android:color/transparent"
+            android:hint="@string/search_jobs"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/bt_search_jobs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/bt_margin"
+            android:layout_weight="25"
+            android:background="@drawable/green_search"
+            android:text="@string/search"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_jobs_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/back_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ll_jobs_list"
+                android:background="@drawable/back_top" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
